@@ -1,0 +1,41 @@
+
+
+<body>
+
+
+<div class="header group">
+  <div class="header-inner group">
+    <div class="logomark">
+      <a href="http://www.hcpss.org/"><img class="logo shadow-smaller" src="http://www.hcpss.org/f/mrb/base/hcpss-logo-outlined.png" height="60" width="60"></a>
+      <h1><a href="http://www.hcpss.org/">Howard County Public School System</a></h1>
+    </div>
+    <div class="sm">
+      <ul class="social-media-icons group">
+        <li><a target="_blank" href="https://twitter.com/hcpss/"><i class="fa fa-twitter-square fa-3"></i></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/hocoschools/"><i class="fa fa-facebook-square fa-3"></i></a></li>
+        <li><a target="_blank" href="https://www.youtube.com/hcpsstv/"><i class="fa fa-youtube-square fa-3"></i></a></li>
+        <li><a target="_blank" href="https://superintendent.hcpss.org/"><img src="http://www.hcpss.org/f/mrb/base/blog-icon.png" alt="Superintendent&#39;s Blog"></a></li>
+      </ul>
+    </div>
+  </div>
+
+<!--googleoff: index-->
+
+<nav id="main-navigation">
+
+</nav>
+
+<!--googleon: index-->
+</div>
+
+
+<div class="container page group">
+<div class="main group">
+
+<!-- <p>&mdash;&mdash; Page Template &mdash;&mdash;</p> -->
+<h1>{{ page.title }}</h1>
+  {% if page.sidebar_view == null %}
+    <div style="width:100%" class="body-content">
+  {% elsif page.sidebar_view %}
+    <div class="body-content">
+  {% endif %}
