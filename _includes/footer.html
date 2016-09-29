@@ -20,7 +20,6 @@
 <div class="footer group">
 <div class="footer-inner group">
 <div class="footer-directions">
-  <a target="_blank" href="https://www.google.com/maps/preview?hl=en&q=10910+Clarksville+Pike,+Ellicott+City,+MD+21042"><img id="hcpss-gmaps-footer-icon" src="./hh_files/directions-maps.png" height="120" width="120"></a>
   <address>
   <strong>Howard County Public School System</strong><br>
   10910 Clarksville Pike<br>
@@ -34,95 +33,11 @@
 Learn more about the email and text alerts included within your HCPSS News subscription. <span class="subscribe"><a href="http://www.hcpss.org/hcpss-news/"><i class="fa fa-bullhorn"></i>&nbsp;Learn more&nbsp;→</a></span></p>
 </div>
 </div>
-</div>
-
-<script>
-if (window.matchMedia("(min-width: 685px)").matches) {
-$("#menu-about-toggle").mouseenter(function() {
-  $(".menu-active").toggleClass("menu-active");
-  $(".highlight").removeClass("highlight");
-  $("#menu-about-toggle").addClass("highlight");
-  $("#menu-about-drop").addClass("menu-active");
-});
-$("#menu-about-drop").mouseleave(function() {
-  $("#menu-about-drop").removeClass("menu-active");
-  $("#menu-about-toggle").removeClass("highlight");
-});
-
-$("#menu-schools-toggle").mouseenter(function() {
-  $(".menu-active").toggleClass("menu-active");
-  $(".highlight").removeClass("highlight");
-  $("#menu-schools-toggle").addClass("highlight");
-  $("#menu-schools-drop").addClass("menu-active");
-});
-$("#menu-schools-drop").mouseleave(function() {
-  $("#menu-schools-drop").removeClass("menu-active");
-  $("#menu-schools-toggle").removeClass("highlight");
-});
-
-$("#menu-academics-toggle").mouseenter(function() {
-  $(".menu-active").toggleClass("menu-active");
-  $(".highlight").removeClass("highlight");
-  $("#menu-academics-toggle").addClass("highlight");
-  $("#menu-academics-drop").addClass("menu-active");
-});
-$("#menu-academics-drop").mouseleave(function() {
-  $("#menu-academics-drop").removeClass("menu-active");
-  $("#menu-academics-toggle").removeClass("highlight");
-});
-
-$("#menu-services-toggle").mouseenter(function() {
-  $(".menu-active").toggleClass("menu-active");
-  $(".highlight").removeClass("highlight");
-  $("#menu-services-toggle").addClass("highlight");
-  $("#menu-services-drop").addClass("menu-active");
-});
-$("#menu-services-drop").mouseleave(function() {
-  $("#menu-services-drop").removeClass("menu-active");
-  $("#menu-services-toggle").removeClass("highlight");
-});
-
-
-$("#menu-news-toggle").mouseenter(function() {
-  $(".menu-active").toggleClass("menu-active");
-  $(".highlight").removeClass("highlight");
-  $("#menu-news-toggle").addClass("highlight");
-  $("#menu-news-drop").addClass("menu-active");
-});
-$("#menu-news-drop").mouseleave(function() {
-  $("#menu-news-drop").removeClass("menu-active");
-  $("#menu-news-toggle").removeClass("highlight");
-});
-
-$("#menu-search-toggle").mouseenter(function() {
-  $(".menu-active").toggleClass("menu-active");
-  $(".highlight").removeClass("highlight");
-  $("#menu-search-toggle").addClass("highlight");
-  $("#menu-search-drop").addClass("menu-active");
-});
-$("#menu-search-drop").mouseleave(function() {
-  $("#menu-search-drop").removeClass("menu-active");
-  $("#menu-search-toggle").removeClass("highlight");
-});
-
-};
-
-</script>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-38673415-1']);
-  _gaq.push(['_setDomainName', 'hcpss.org']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<script src="style.js"></script>
+  {% if page.sidebar_view == null %}
+  
+  {% elsif page.sidebar_view %}
+    </div>
+  {% endif %}
+<script type='text/javascript' src='http://s3.amazonaws.com/hcpss.web.site/images/hcpss-2016-06-21.min.js?ver=4.6.1'></script>
 
 </body></html>
