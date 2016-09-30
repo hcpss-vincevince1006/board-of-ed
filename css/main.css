@@ -267,7 +267,7 @@ a:hover {
   }
 }
 
-.callout, .callout-border-prim, .callout-border-prim--left, .callout-border-prim--top, .callout-border-sec, .callout-border-sec--left, .callout-border-sec--top, .callout-border-tert, .callout-border-tert--left, .callout-border-tert--top, .callout-border-selective, .callout-border-selective--left, .callout-border-selective--top, .callout--rounded-no-border {
+.callout, .callout-border-prim, .callout-border-prim--left, .callout-border-prim--top, .callout-border-prim--rounded-left-lighter, .callout-border-sec, .callout-border-sec--left, .callout-border-sec--top, .callout-border-tert, .callout-border-tert--left, .callout-border-tert--top, .callout-border-selective, .callout-border-selective--left, .callout-border-selective--top, .callout--rounded-no-border {
   background-color: #F1EBE7;
   width: initial;
   float: left;
@@ -293,6 +293,20 @@ a:hover {
   .callout-border-prim--top {
     border-top: none;
     border-left: #0063A4 3px solid;
+  }
+}
+
+.callout-border-prim--rounded-left-lighter {
+  background-color: #f8f8f8;
+  border-left: #0063A4 3px solid;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width: 42.8125em) {
+  .callout-border-prim--rounded-left-lighter {
+    border-top-right-radius: none;
+    border-bottom-right-radius: none;
   }
 }
 
