@@ -342,6 +342,28 @@ a:hover {
   background-color: #3494D2;
 }
 
+a .thirds__action-tile {
+  transition: margin-top 0.2s ease-out;
+  -webkit-transition: margin-top 0.2s ease-out;
+}
+
+@media screen and (max-width: 42.8125em) {
+  a .thirds__action-tile {
+    transition: none;
+    -webkit-transition: none;
+  }
+}
+
+a .thirds__action-tile:hover {
+  margin-top: -8px;
+}
+
+@media screen and (max-width: 42.8125em) {
+  a .thirds__action-tile:hover {
+    margin-top: 0px;
+  }
+}
+
 .thirds__action-tile > .fa {
   font-size: 4em;
 }
