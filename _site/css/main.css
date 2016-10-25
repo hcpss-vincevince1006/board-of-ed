@@ -249,6 +249,10 @@ a:hover {
   }
 }
 
+.section__breakout--full-rounded-first {
+  margin-top: 0;
+}
+
 .section__breakout--aside {
   padding: 1em;
   margin: 1em;
@@ -1734,25 +1738,25 @@ a.pdf-icon:hover {
   max-width: 100%;
 }
 
-.sm-margin-top-btm {
+.smtb-mg {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
 @media screen and (max-width: 42.8125em) {
-  .sm-margin-top-btm {
+  .smtb-mg {
     margin-top: 1em;
     margin-bottom: 1em;
   }
 }
 
-.lg-margin-top-btm {
+.lgtb-mg {
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
 @media screen and (max-width: 42.8125em) {
-  .lg-margin-top-btm {
+  .lgtb-mg {
     margin-top: 1em;
     margin-bottom: 1em;
   }
