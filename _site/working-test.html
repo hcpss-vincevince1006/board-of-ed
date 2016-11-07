@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-US"><!-- saved from url=(0044)http://www.hcpss.org/home-hospital-teaching/ --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <meta name="viewport" content="width=device-width">  -->
+<title>BOE Mockup –  HCPSS</title>
+    <style>
+        /* Rudimentary mega menu CSS for demonstration */    
+
+        /* mega menu list */
+        .nav-menu {
+            display: block;
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            z-index: 15;
+        }
+
+        /* a top level navigation item in the mega menu */
+        .nav-item {
+            list-style: none;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* first descendant link within a top level navigation item */
+        .nav-item > a {
+            position: relative;
+            display: inline-block;
+            padding: 0.5em 1em;
+            margin: 0 0 -1px 0;
+            border: 1px solid transparent;
+        }
+
+        /* focus/open states of first descendant link within a top level 
+           navigation item */
+        .nav-item > a:focus,
+        .nav-item > a.open {
+            border: 1px solid #dedede;
+        }
+
+        /* open state of first descendant link within a top level 
+           navigation item */
+        .nav-item > a.open {
+            background-color: #fff;
+            border-bottom: none;
+            z-index: 1;
+        }
+
+        /* sub-navigation panel */
+        .sub-nav {
+            position: absolute;
+            display: none;
+            top: 2.2em;
+            margin-top: -1px;
+            padding: 0.5em 1em;
+            border: 1px solid #dedede;
+            background-color: #fff;
+        }
+
+        /* sub-navigation panel open state */
+        .sub-nav.open {
+            display: block;
+        }
+
+        /* list of items within sub-navigation panel */
+        .sub-nav ul {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 1em 0 0;
+            padding: 0;
+        }
+
+        /* list item within sub-navigation panel */
+        .sub-nav li {
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }     
+    </style>
+<link rel="stylesheet" type="text/css" href="http://www.hcpss.org/f/mrb/base/normalize.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://code.cdn.mozilla.net/fonts/fira.css">
+<!-- <link rel="stylesheet" type="text/css"
+  href="http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700" > -->
+
+<link rel="stylesheet" type="text/css" href="http://localhost:8888/">
+
+</head>
+
+  <body cz-shortcut-listen="true">
+
+  <div class="header group">
+  <div class="header-inner group" itemscope="" itemtype="http://schema.org/Organization">
+    <div class="logomark">
+      <a href="/"><img itemprop="logo" class="logo shadow-smaller" src="http://s3.amazonaws.com/hcpss.web.site/images/hcpss-logo-outlined.png" height="60" width="60" alt="">
+      <h1>Howard County Public School System</h1></a>
+    </div>
+    <div class="sm">
+      <link itemprop="url" href="http://www.hcpss.org/">
+      <ul class="social-media-icons group">
+        <li><a target="_blank" id="social-media-icon-twitter" href="https://twitter.com/hcpss/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/twitter-squared.svg" alt="Follow @hcpss on Twitter"></a></li>
+        <li><a target="_blank" id="social-media-icon-facebook" href="https://www.facebook.com/hocoschools/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/facebook-squared.svg" alt="Like HoCoSchools on Facebook"></a></li>
+        <li><a target="_blank" id="social-media-icon-instagram" href="https://instagram.com/hocoschools/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/instagram.svg" alt="Follow HoCoSchools on Instagram"></a></li>
+        <li><a target="_blank" id="social-media-icon-vimeo" href="https://www.vimeo.com/hcpss/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/vimeo-squared.svg" alt="Watch HCPSS videos on Vimeo"></a></li>
+        <li><a target="_blank" id="social-media-icon-youtube" href="https://www.youtube.com/hcpsstv/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/youtube-squared.svg" alt="Watch HCPSS videos on YouTube"></a></li>
+        <li><a target="_blank" id="social-media-icon-super-blog" href="https://superintendent.hcpss.org/"><img src="http://s3.amazonaws.com/hcpss.web.site/images/blog-icon.svg" width="27" height="32" alt="Visit the Superintendent's Blog"></a></li>
+</ul>
+    </div>
+  </div>
+
+   <nav>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="?movie">Movies</a>
+                <div class="sub-nav">
+                    <ul class="sub-nav-group">
+                        <li><a href="?movie&genre=0">Action &amp; Adventure</a></li>
+                        <li><a href="?movie&genre=2">Children &amp; Family</a></li>
+                        <li>&#8230;</li>
+                    </ul>
+                    <ul class="sub-nav-group">
+                        <li><a href="?movie&genre=7">Dramas</a></li>
+                        <li><a href="?movie&genre=9">Foreign</a></li>
+                        <li>&#8230;</li>
+                    </ul>
+                    <ul class="sub-nav-group">
+                        <li><a href="?movie&genre=14">Musicals</a></li>
+                        <li><a href="?movie&genre=15">Romance</a></li>
+                        <li>&#8230;</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="?tv">TV Shows</a>
+                <div class="sub-nav">
+                    <ul class="sub-nav-group">
+                        <li><a href="?tv&genre=20">Classic TV</a></li>
+                        <li><a href="?tv&genre=21">Crime TV</a></li>
+                        <li>&#8230;</li>
+                    </ul>
+                    <ul class="sub-nav-group">
+                        <li><a href="?tv&genre=27">Reality TV</a></li>
+                        <li><a href="?tv&genre=30">TV Action</a></li>
+                        <li>&#8230;</li>
+                    </ul>
+                    <ul class="sub-nav-group">
+                        <li><a href="?tv&genre=33">TV Dramas</a></li>
+                        <li><a href="?tv&genre=34">TV Horror</a></li>
+                        <li>&#8230;</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+  <div class="container page group">
+<div class="main">
+<!-- <p>&mdash;&mdash; Front Page Template &mdash;&mdash;</p>  -->
+
+
+  <nav class="secondary-nav">
+  <div class="secondary-nav__inner">
+  <input class="second-state" type="checkbox" name="second-nav-state" id="secondary-nav--toggle" autocomplete="off">
+  <h2><a href="/enroll/">Enrollment</a></h2>
+    <label class="secondary-nav__inner--toggle-btn" tabindex="0" for="secondary-nav--toggle"><span class="secondary-nav__inner--hidden">Secondary Navigation</span></label>
+      <ul class="secondary-nav__collapsable">
+        <li><a href="#eligibility">Eligibility</a></li>
+        <li><a href="#find-school">Find your School</a></li>
+        <li><a href="#docs">Documents</a></li>
+        <li><a href="#meeting">Set up a meeting</a></li>
+        <li><a href="#immunizations">Immunizations</a></li>
+      </ul>
+  </div>
+</nav>
+
+<div class="contents hero-heading">
+  <h1>Register your Child for School</h1>
+</div>
+
+<div class="contents">  
+  <h2 id="eligibility">Step 1 – Assess Eligibility and Needs</h2>
+  <div class="col-left">
+    <h3>New Students</h3>
+    <p><strong>Students who have never attended a HCPSS school</strong> must be registered by their custodial parent (biological, adoptive, legal guardian).</p>
+    <p><strong>New Kindergarten Students</strong></p>
+    <p>Children must be 5 years old by September 1 in order to enroll in kindergarten. Every child who is 5 years old by September 1 must be enrolled in a kindergarten program this fall or have an approved waiver.</p>  
+    <p><strong>New Pre-Kindergarten Students</strong></p>
+    <p>HCPSS offers a half-day prekindergarten program. Students must be four years old by September 1, 2016 to be considered for enrollment.</p>
+    <p>Unlike enrollment for K-12, parents must apply for admission to pre-kindergarten. <a href="http://www.hcpss.org/schools/pre-k-programs/">Learn more →</a></p>   
+    <p><strong>Seeking Early Admission?</strong></p>
+    <p><a href="http://www.hcpss.org/enroll/early-admission/">Find out more and see if your child qualifies →</a></p>    
+  </div>
+
+  <div class="col-right">
+  <h3>Current Students</h3>
+  <p><strong>Current HCPSS enrolled students moving between schools within the system</strong></p>
+  <ul>
+    <li>Moving over the <strong>summer?</strong> Find and contact your child’s <strong>upcoming school</strong> to begin the transfer process. <a href="https://hcpss2.securesites.net/SchoolLocator/index.jsp" target="_blank"> <i class="fa fa-map-o" aria-hidden="true"></i> Verify your child’s upcoming school →</a></li>
+    <li>Moving <strong>during the school year?</strong> Contact your child’s <a href="/schools/">current school</a> and they will assist you with the transfer process.</li>
+  </ul>   
+  <p><strong>Current HCPSS pre-kindergarten students</strong> do not need to be re-registered for kindergarten because they are already enrolled as an HCPSS student.</p>
+   <p><img class="img--shadow" src="http://www.hcpss.org/wp-content/uploads/2016/02/bbms-gt-teacher-students-computer-lab.jpg"></p> 
+      <p>Students who need ESOL services or parents who need language support should contact an International Student Registration Call Center.</p>
+        <p><strong>Call centers:</strong> <a href="http://www.hcpss.org/languages/spanish/call-center/">Spanish</a> | <a href="http://www.hcpss.org/languages/chinese/call-center/">Chinese</a> | <a href="http://www.hcpss.org/languages/korean/call-center/">Korean</a> | <a href="http://www.hcpss.org/languages/chin/call-center/">Chin</a></p>
+  </div>
+</div>
+
+<div class="contents full"> 
+  <h2 id="find-school">Step 2 – Find Your School</h2>   
+  <p>Parents must live in the attendance area of the school where they plan to enroll their student.</p>
+  <p><a href="https://hcpss2.securesites.net/SchoolLocator/index.jsp" target="_blank"><i class="fa fa-map-o" aria-hidden="true"></i> Verify your child’s school attendance area →</a></p>  
+</div>
+
+<div class="contents">
+  <h2 id="docs">Step 3 – Gather Documentation and Complete Registration Packet</h2> 
+  <div class="col-left">
+    <h3>Parent Identification documents</h3>
+    <ul>
+      <li>Parent picture ID: original driver’s license, military ID, or passport.</li>
+      <li>Signed original, current lease or deed with your address, valid dates, signatures.</li>
+      <li>Current utility bill with name and address (non-cellular telephone, gas and electric, cable bill) issued within the previous 45 days of registration.</li>
+    </ul>
+    <h3>Student Identification documents</h3>
+    <ul> 
+      <li>Student’s proof of birth (original birth certificate, passport/visa, physician’s certificate, baptismal or church certificate, parent’s affidavit or birth registration).</li>
+      <li>Proof of parental relationship, custody, or guardianship. If applicable, bring legal proof of custody (court order).</li>
+      <li>Student’s current proof of immunizations signed by a doctor, health care provider, day care provider or school official.</li>
+      <li>Any additional paperwork that may be necessary due to special living arrangements or circumstances.</li>    
+    </ul>
+    <h3>Academic documents</h3>
+    <ul>
+      <li>Student’s most recent grade report, transcript, report card from last school attended at time of withdrawal, if applicable.</li>
+      <li>Documentation of Special Education (IEP), 504, Psychological Report, or related services.</li>
+    </ul>
+    <p><a href="/enroll/faq/"><i class="fa fa-question-circle" aria-hidden="true"></i> Frequently Asked Questions about Enrollment and Registration</a></p>
+  </div>
+
+  <div class="col-right">
+   <h3>Forms</h3>
+    <p><a href="http://www.hcpss.org/f/schools/registration-form.pdf">Registration Packet <img alt="(PDF)" src="http://www.hcpss.org/f/images/bullet-pdf.gif" width="16" height="16" align="bottom" border="0"></a></p> 
+    <p>Parents may defer enrollment by one year by filling out a request to not enter kindergarten:</p>
+    <ul>
+      <li><a href="http://www.hcpss.org/f/schools/kindergarten/kinder-waiver.pdf">Kindergarten Waiver Form <img alt="(PDF)" src="http://www.hcpss.org/f/images/bullet-pdf.gif" width="16" height="16" align="bottom" border="0"></a></li>
+      <li><a href="http://www.hcpss.org/f/schools/kindergarten/kinder-waiver-spanish.pdf">Spanish translation <img alt="(PDF)" src="http://www.hcpss.org/f/images/bullet-pdf.gif" width="16" height="16" align="bottom" border="0"></a></li>
+    </ul>
+   <h4>Health Documentation</h4>
+      <p>Students who have never attended a Howard County public school have certain health documents to submit with their enrollment paperwork. <a href="/health/">Learn more about these forms and find additional forms</a> for diabetic students, students with allergies, and student medications. </p> 
+   <h3>Getting ready for Kindergarten</h3>
+   <p><strong>Kindergarten Registration for the 2017-18 school year</strong> opens in the spring of 2017.</p>
+   <p><a href="/enroll/kindergarten/">Find out more about Getting Ready for Kindergarten →</a></p>
+   <p>Contact the Office of Early Childhood Programs, 410-313-5693, with any additional questions.</p>
+   <div class="full">
+    <h4>Road to Kindergarten Workshops</h4>
+     <p>Workshops are held in January and go over expectations for school readiness, details about the kindergarten program, and ways that families and children can be supported during the transition to kindergarten. All families of future kindergarten students are welcome to attend.</p>
+   </div>
+  </div>
+</div>
+
+<div class="contents full">
+  <h2 id="meeting">Step 4 – Meet Your New School</h2>  
+  <p>After gathering the required documents and filling out the required forms, parents should contact their child’s new school and schedule a registration appointment. This helps ensure that the registration process is completed correctly. </p>
+  <p><a href="http://www.hcpss.org/schools/">Find your school’s contact information →</a></p>
+</div>
+
+<div class="contents">
+  <h2 id="immunizations">Immunizations</h2>  
+  <div class="contents">
+    <div class="col-left">
+        <p>All children must have the required State of Maryland immunizations in order to attend school. Parents are responsible for providing proof of immunization to the school prior to the student attending or proof of an appointment for necessary immunizations within 20 calendar days of the first day of school.</p>
+        <p><strong>Students out of compliance or without evidence of an appointment for necessary immunizations may not be admitted to school.</strong></p>
+    </div>
+    <div class="col-right">
+      <img class="img--shadow" src="http://www.hcpss.org/wp-content/uploads/2015/07/immunization-doctor-student.jpg" alt="">
+    </div>
+  </div>
+  <div class="contents">
+    <div class="col-left">
+      <h3>Immunization Exceptions</h3>
+      <ul>
+        <li>A medical contraindication (exemptions for specific immunizations) signed by a physician.</li>
+        <li>A lost or destroyed record statement signed by a parent. Proof of measles and rubella immunization by a blood test must be presented. Revaccination may be required. For assistance, contact the Howard County Health Department.</li>
+        <li>A religious exemption statement signed by a parent.</li>
+        <li>The school principal may temporarily admit a homeless student.</li>
+      </ul>
+    </div>
+    <div class="col-right">
+      <h3>Documentation</h3>
+        <p>The <a href="http://www.hcpss.org/f/schools/immunization.pdf">MD Dept. of Health and Mental Hygiene Immunization Certificate</a> should include the dates of all completed vaccines and be signed by the child’s doctor, health care provider, day care provider or school official. A parent’s signature is not permitted.</p>
+        <p>Records from a previously attended school are accepted only if they are the most up to date copies.</p>
+        <p>In some cases a computer-generated record may be acceptable if all needed information and signature are included. A health department official may also sign proof of immunizations.</p>
+    </div>
+  </div>
+  <p><strong>Questions about immunizations?</strong> Contact the health staff at <a href="http://www.hcpss.org/schools/">your child’s school</a> or the HCPSS Health Services Office at 410-313-6812.</p>
+</div>
+
+<div class="contents full">
+  <div class="col-left">
+    <h3>Additional Enrollment Questions</h3>
+    <p>For additional information or questions, please contact your <a href="/schools/">anticipated school of enrollment</a>.</p>
+  </div>
+  <div class="col-right">
+  <h3>Prepare for the first day:</h3>
+  <ul>
+    <li><a href="http://www.hcpss.org/schools/opening-and-closing-times/">School Start Times</a></li>
+    <li><a href="http://www.hcpss.org/schools/before-and-after-school-care/">Before- &amp; After-school Care Options</a></li>
+    <li><a href="http://www.hcpss.org/food-services/">School Meals</a></li>
+    <li><a href="http://www.hcpss.org/schools/back-to-school-nights/">Back to School Nights – 2016</a></li>
+    <li><a href="http://www.hcpss.org/schools/school-supply-lists/">School Supply Lists</a></li>
+    <li><a href="http://www.hcpss.org/schools/transportation/">Transportation</a></li>
+    <li><a href="http://www.hcpss.org/academics/what-your-child-will-learn-guides/">Find out what your child will learn at HCPSS</a></li>
+  </ul>
+  </div>  
+</div>
+
+
+</div>
+
+
+
+<!-- include jquery -->
+    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    <!-- include the jquery-accessibleMegaMenu plugin script -->
+    <script src="js/jquery-accessibleMegaMenu.js"></script>
+
+    <!-- initialize a selector as an accessibleMegaMenu -->
+    <script>
+        $("nav:first").accessibleMegaMenu({
+            /* prefix for generated unique id attributes, which are required 
+               to indicate aria-owns, aria-controls and aria-labelledby */
+            uuidPrefix: "accessible-megamenu",
+
+            /* css class used to define the megamenu styling */
+            menuClass: "nav-menu",
+
+            /* css class for a top-level navigation item in the megamenu */
+            topNavItemClass: "nav-item",
+
+            /* css class for a megamenu panel */
+            panelClass: "sub-nav",
+
+            /* css class for a group of items within a megamenu panel */
+            panelGroupClass: "sub-nav-group",
+
+            /* css class for the hover state */
+            hoverClass: "hover",
+
+            /* css class for the focus state */
+            focusClass: "focus",
+
+            /* css class for the open state */
+            openClass: "open"
+        });
+    </script>
+
+  
+
+
+</div>
+</body>
+</html>
