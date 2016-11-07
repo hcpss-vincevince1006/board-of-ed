@@ -11,7 +11,7 @@
 <!-- <link rel="stylesheet" type="text/css"
   href="http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700" > -->
 
-<link rel="stylesheet" type="text/css" href="http://localhost:8888/">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 
@@ -28,16 +28,23 @@
       <a href="/"><img itemprop="logo" class="logo shadow-smaller" src="http://s3.amazonaws.com/hcpss.web.site/images/hcpss-logo-outlined.png" height="60" width="60" alt="">
       <h1>Howard County Public School System</h1></a>
     </div>
-    <div class="sm">
-      <link itemprop="url" href="http://www.hcpss.org/">
-      <ul class="social-media-icons group">
-        <li><a target="_blank" id="social-media-icon-twitter" href="https://twitter.com/hcpss/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/twitter-squared.svg" alt="Follow @hcpss on Twitter"></a></li>
-        <li><a target="_blank" id="social-media-icon-facebook" href="https://www.facebook.com/hocoschools/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/facebook-squared.svg" alt="Like HoCoSchools on Facebook"></a></li>
-        <li><a target="_blank" id="social-media-icon-instagram" href="https://instagram.com/hocoschools/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/instagram.svg" alt="Follow HoCoSchools on Instagram"></a></li>
-        <li><a target="_blank" id="social-media-icon-vimeo" href="https://www.vimeo.com/hcpss/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/vimeo-squared.svg" alt="Watch HCPSS videos on Vimeo"></a></li>
-        <li><a target="_blank" id="social-media-icon-youtube" href="https://www.youtube.com/hcpsstv/" itemprop="sameAs"><img src="http://s3.amazonaws.com/hcpss.web.site/images/youtube-squared.svg" alt="Watch HCPSS videos on YouTube"></a></li>
-        <li><a target="_blank" id="social-media-icon-super-blog" href="https://superintendent.hcpss.org/"><img src="http://s3.amazonaws.com/hcpss.web.site/images/blog-icon.svg" width="27" height="32" alt="Visit the Superintendent's Blog"></a></li>
-</ul>
+    <div class="header-search">
+      <form action="http://search.hcpss.org/search" method="get" id="search-form">
+        <input type="hidden" name="site" value="www_main_site">
+        <input type="hidden" name="proxystylesheet" value="hcpss_main_frontend">
+        <input type="hidden" name="client" value="hcpss_main_frontend">
+        <input type="hidden" name="access" value="p">
+        <input type="hidden" name="ie" value="UTF-8">
+        <input type="hidden" name="oe" value="UTF-8">
+        <input type="hidden" name="filter" value="0">
+        <input type="hidden" name="numgm" value="5">
+        <input type="hidden" name="btnG" value="Search">
+        <input type="hidden" name="output" value="xml_no_dtd">
+        <input type="hidden" name="sort" value="date:D:L:d1">
+        <label style="display: none;" for="q">Search:</label>
+        <input type="text" id="q" name="q" maxlength="255">
+        <button style="background-color: #FECC6A;color: black;border-radius: 10px;border: none;" type="submit">Search</button>
+      </form>
     </div>
   </div>
 
