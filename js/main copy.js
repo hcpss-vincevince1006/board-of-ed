@@ -12,14 +12,6 @@ var navToggle = function(clickElement) {
 
 navToggle('#accordion-mobile h3');
 
-var toggleAppear = function(labelClick) {
-  $(labelClick).click(function() {
-    $('.nav-main__mobile-close').html('<label for="nav-sidebartoggler"><p style="float: right;cursor:pointer;margin-right: 1em;">Close Main Menu <i class="fa fa-times-circle" aria-hidden="true"></i></p></label>');
-  });
-}
-
-toggleAppear('#nav-main__mobile_toggle-button');
-
 var sectionArrowToggle = function(clickElement) {
   $(clickElement).on('click', function(event){
     if($(this).next().hasClass('hide')) {

@@ -65,7 +65,21 @@ $('.slider').each(function() {              // For every slider
 
 });
 
-
+function a11yClick(event){
+  // ensures that click elements in dropdown toggles can be accessed via tab, and toggled with the enter key. Thanks Karl Groves! http://www.karlgroves.com/2014/11/24/ridiculously-easy-trick-for-keyboard-accessibility/
+    if(event.type === 'click'){
+        return true;
+    }
+    else if(event.type === 'keypress'){
+        var code = event.charCode || event.keyCode;
+        if((code === 32)|| (code === 13)){
+            return true;
+        }
+    }
+    else{
+        return false;
+    }
+}
 
 var sectionArrowToggle = function(clickElement) {
   $(clickElement).on('click keypress', function(event){
